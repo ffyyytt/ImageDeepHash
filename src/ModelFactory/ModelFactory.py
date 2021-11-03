@@ -42,7 +42,7 @@ class ModelFactory:
             else:
                 return self.load_model_from_path(self.flexible_model[name])
         elif name in self.factory:
-            return load_backbone(name="ResNet50", input_shape=input_shape, classes=classes)
+            return load_backbone(name=name, input_shape=input_shape, classes=classes)
         elif os.path.isfile(name):
             self.flexible_model["custom_model" +
                                 str(len(self.flexible_model))] = name
