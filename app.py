@@ -37,12 +37,12 @@ COMPARE_MODEL_TYPES = None
 
 
 @app.route('/')
-def homepage():
+def hash_page():
     return render_template("hash.html")
 
 
 @app.route('/compare')
-def about_page():
+def compare_page():
     return render_template("compare.html")
 
 
